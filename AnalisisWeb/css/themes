@@ -1,0 +1,15 @@
+:root {
+    --background: #FDFCFF; 
+    --foreground: #330033;
+    --midground: #ECE3FF
+;
+    --card: #800080;
+    --card-foreground: #CC3333; /* #323B42 */
+
+    --popover:#FF6666; /* #323B42 */
+    --popover-foreground: #FF99CC
+; /* #323B42 */
+
+   
+}
+
