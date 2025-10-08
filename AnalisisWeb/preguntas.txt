@@ -1,0 +1,2 @@
+que estrategias de diseño responsive usas en tu proyecto
+que estrategias de diseño mobile first usas en tu proyecto

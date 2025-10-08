@@ -1,16 +1,15 @@
-/* Basic reset for consistent margins and paddings */
            
 a {
-    color: var(--background);
+    color: var(--resources);
 }
 
 article {
     display: block;
     margin: 30px;
-    background-color: var(--midground);
+    background-color: var(--background);
     padding: 40px 40px;
     border-radius: 40px;
-    color: var(--destructive);
+    color: var(--resources);
     align-items: center;
     width:auto;
     max-height: 50%;
@@ -19,26 +18,11 @@ article {
 
 
 }
-popover-article{
-    display:grid;
-    margin: auto;
-    background-color: var(--popover);
-    padding: 40px 40px;
-    border-radius: 160px;
-    color: var(--card-foreground);
-    align-items: center;
-    width:50%;
-    max-height: 50%;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-    text-align: center;
 
-
-
-}
     
 blockquote {
     background-color: var(--background);
-    border-left: 10px solid var(--popover);
+    border-left: 10px solid var(--admission);
     margin: 20px 0;
     padding: 10px 10px;
     border-radius: 20px;
@@ -67,11 +51,11 @@ body {
 button-mid {
     text-align:center;
     vertical-align:middle;
-    margin: 40px;
-    background-color: var(--foreground);
-    padding: 20px 20px;
-    border-radius: 80px;
-    color: var(--card-foreground);
+    margin: 1em;
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius:0.5%;
+    color: var(--about);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width:25%;
 }
@@ -79,11 +63,11 @@ button-mid {
 button-left {
     text-align:center;
     vertical-align:left;
-    margin: 40px;
-    background-color: var(--foreground);
-    padding: 20px 20px;
-    border-radius: 80px;
-    color: var(--card-foreground);
+    margin:1em;
+    background-color: transparent;
+    padding:0.5em;
+    border-radius: 0.5%;
+    color: var(--cartelera);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width:25%;
 }
@@ -91,11 +75,11 @@ button-left {
 button-right {
     text-align:center;
     vertical-align:right;
-    margin: 40px;
-    background-color: var(--foreground);
-    padding: 20px 20px;
-    border-radius: 80px;
-    color: var(--card-foreground);
+    margin: 1em;
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius: 0.5%;
+    color: var(--headline);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width:25%;
 }
@@ -104,13 +88,13 @@ cite {
     display: block;
     margin-top: 10px;
     font-size: 0.9em;
-    color: var(--PO);
+    color: var(--other);
 }
 
 
 footer {
     background-color: transparent;
-    color: var(--card-foreground);
+    color: var(--admission);
     padding: 20px;
     gap: 10px;
     width: 100%; 
@@ -131,42 +115,31 @@ footer div {
 header {
         padding: 20px;
         font-size: 100%;
-        display:flex;
-        background-color: var(--background);
+        display:fex;
+        background-color: transparent;
         align-items: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-}
-html {
-	scroll-behavior: smooth;
 }
 
+
+
 h1{
-    font-size: 110%;
+    font-size: 2em;
     margin: 20px 0;
-    color: var(--card-foreground);
+    color: var(--headline);
     align-items: center;
 }
-h1-2{
-        font-size: 110%;
-        color: var(--card-foreground);
-        align-items: center;
-        font-weight: 900;
-        display:inline-block;
-        margin: 4%;
-        margin-top: 0;
-}
+
 h2{
-    font-size: 75%;
+    font-size: 1em;
     line-break: 8%;
     margin: 20px 0;
-    color: var(--card-foreground)
+    color: var(--entradas)
 }
 h3{
     font-size: 60%;
     line-break: 8%;
     margin: 0.5%;
-    color: var(--card-foreground);
+    color: var(--contacto);
     display: inline-block;
     align-items: center;
 }
@@ -174,14 +147,14 @@ h4 {
     font-size: 45%;
     line-break: 8%;
     margin: 20px 0;
-    color: var(--card-foreground);
+    color: var(--other);
     align-items: center;
 }
 h5 {
     font-size: 30%;
     line-break: 8%;
     margin: 20px 0;
-    color: var(--card-foreground);
+    color: var(--contacto);
 }
 
 img{
@@ -203,44 +176,26 @@ img{
 main {
     display:grid;
     width: 100%; 
-    gap: 1rem; /* Optional, adds space between rows/columns */
-    overflow-y:hidden; /* Enable scrolling for content */
-    scroll-behavior:auto; /* Enable smooth scrolling */
-    grid-template-columns:auto;
-    background-color: var(--background);
-}
-main-about {
-    display:grid;
-    width: 100%; 
-    gap: 1rem; /* Optional, adds space between rows/columns */
-    overflow-y:clip;
+    gap: 1rem; 
+    overflow-y:hidden; 
+    scroll-behavior:auto; 
     grid-template-columns:auto;
     background-color: transparent;
 }
 
-nav {
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-}
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-nav ul li {
-	margin-right: 1rem;
+
+#menu {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-	color: var(--popover);
-	outline: none;
-}
-nav ul li a {
-	text-decoration: none;
-	color: #333;
+#menu > ul > li {
+    list-style: none;
+    height: 3em;
+    display: flex;
+    align-items: center;
 }
 
 p {
@@ -248,26 +203,4 @@ p {
     line-height: 1;
     display: block;
     font-size: 45%;
-}
-header {
-	background: #fff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-nav {
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-}
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-nav ul li {
-	margin-right: 1rem;
-}
-nav ul li a {
-	text-decoration: none;
-	color: #333;
 }
