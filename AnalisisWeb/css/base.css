@@ -6,7 +6,7 @@ a {
 article {
     display: block;
     margin: 30px;
-    background-color: var(--background);
+    background-color: var(--foreground);
     padding: 40px 40px;
     border-radius: 40px;
     color: var(--resources);
@@ -118,6 +118,7 @@ header {
         display:fex;
         background-color: transparent;
         align-items: center;
+        color: var(cartelera)
 }
 
 
@@ -201,6 +202,6 @@ main {
 p {
     margin:flex;
     line-height: 1;
-    display: block;
-    font-size: 45%;
+    display: center;
+    font-size: 60%;
 }
