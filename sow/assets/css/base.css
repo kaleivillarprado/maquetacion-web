@@ -7,13 +7,9 @@
 }
 
 .analysis-text {
- columns: 1;
- column-gap: 2rem;
- @media (min-width: 800px) {
- .analysis-text {
- columns: 2;
- }
- }
+    width: 100%;
+    columns: 1;
+    column-gap: 0rem;
  }
  
 a {
@@ -38,6 +34,7 @@ article {
     text-align: left;
 }
 
+
 article > section > blockquote > h3 {
     text-align: left;
 }
@@ -54,7 +51,6 @@ blockquote {
 }
 
 blockquote > h2{
-    
     text-align: center;
 }
 
@@ -102,6 +98,20 @@ header {
 
 }
 
+.header-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20000;
+    color: var(--background);
+    background-color: var(--resources);
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    text-align: center;
+    display:flex;
+}
+
 header > div > nav > ul > blockquote {
     margin: 0.5em;
     border-left: none;
@@ -146,19 +156,21 @@ h4 {
 
 img{
     border-style: none;
-    max-block-size: 50%;
+    max-block-size: 70%;
     display: grid;
     margin: auto;
-    max-width: 60%;
 }
 
 main {
     display:grid;
-    width: 100%; 
+    width: 100%;
+    max-width: 1200px;
     gap: 1rem; 
     grid-template-columns:auto;
     background-color: transparent;
+    margin: 0 auto;
 }
+
 
 #menu {
     position: sticky;
@@ -209,7 +221,7 @@ p {
 
  .screenshots {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ grid-template-columns: 1fr;
  gap: 1rem;
  }
  .screenshots img {
